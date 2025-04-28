@@ -56,7 +56,7 @@ class ContactsApp(tk.Tk):
         super().__init__()
         self.title("Contact Manager")
         try:
-            icon = tk.PhotoImage(file="/bin/Python/Contact_Manager/contact_manager_icon.png")
+            icon = tk.PhotoImage(file="~/bin/Python/Contact_Manager/contact_manager_icon.png")
             self.iconphoto(False, icon)
         except Exception as e:
             log_error(f"Failed to load icon: {e}")
