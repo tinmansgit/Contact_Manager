@@ -1,7 +1,10 @@
 import logging
+from datetime import datetime
 
-error_log_file = '/bin/Python/Contact_Manager/log_contact_manager_error.log'
-debug_log_file = '/bin/Python/Contact_Manager/log_contact_manager_debug.log'
+current_date = datetime.now().strftime('%Y-%m-%d')
+error_log_file = f'~/bin/Python/Contact_Manager/log_error_contact_manager_{current_date}.log'
+debug_log_file = f'~/bin/Python/Contact_Manager/log_debug_contact_manager_{current_date}.log'
+
 
 logger = logging.getLogger('app_logger')
 logger.setLevel(logging.DEBUG)
